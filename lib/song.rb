@@ -5,7 +5,9 @@ require_relative './concerns/paramable.rb'
 
 class Song
   #extend Memorable
-  extend Memorable, Findable, Paramable
+  extend Memorable
+  extend Findable
+  extend Paramable
   attr_accessor :name
   attr_reader :artist
 
