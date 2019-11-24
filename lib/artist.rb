@@ -8,6 +8,7 @@ class Artist
   extend Memorable
   extend Paramable
   extend Findable
+  include Paramable
   attr_accessor :name
   attr_reader :songs
 
