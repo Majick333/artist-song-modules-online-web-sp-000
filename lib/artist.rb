@@ -5,8 +5,9 @@ require_relative './concerns/paramable.rb'
 
 
 class Artist
-  extend Memorable, Findable, Paramable
-  #extend Findable
+  extend Memorable
+  extend Paramable
+  extend Findable
   attr_accessor :name
   attr_reader :songs
 
@@ -45,4 +46,5 @@ class Artist
 #  def to_param
 #    name.downcase.gsub(' ', '-')
 #  end
+
 end
